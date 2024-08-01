@@ -1,0 +1,241 @@
+/* Modern color palette */
+:root {
+  --primary-color: #34495e;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --background-color: #ecf0f1;
+  --text-color: #2c3e50;
+  --button-color: #3498db;
+  --button-hover-color: #2980b9;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+/*! container */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.container {
+  margin: 1vh;
+  display: flex;
+  min-height: fit-content;
+  flex-direction: column;
+}
+/*! end of container */
+
+/*? header */
+#header {
+  display: flex;
+  min-height: 16vh;
+
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  border-top-right-radius: 2vh;
+  border-top-left-radius: 2vh;
+}
+
+#title {
+  height: auto;
+  width: auto;
+  margin-left: 40vh;
+}
+
+.To-do {
+  font-size: 6rem;
+  margin: 0%;
+  color: var(--accent-color);
+}
+
+#title-button {
+  margin-right: 10vh;
+}
+
+#add-button {
+  height: 8vh;
+  width: 8vh;
+  border-radius: 8vh;
+  background-color: var(--button-color);
+}
+
+.add-icon {
+  font-size: 3rem;
+}
+/*?  end of header  */
+
+/*! main */
+
+#main {
+  margin: 1vh;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-around;
+  min-height: 120vh;
+  max-height: 500vh;
+  border-radius: 2vh;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/*? lists */
+.lists {
+  min-height: fit-content;
+  max-height: fit-content;
+
+  margin: 3vh;
+  border-radius: 2vh;
+  width: 100vh;
+  background-color: var(--background-color);
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*! task  */
+.task {
+  margin: 3vh;
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+}
+
+/* todo top */
+
+.top {
+  border-bottom-right-radius: 2vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-title {
+  margin-left: 3vh;
+  padding: 0%;
+}
+
+.task-title-content {
+  font-size: 2rem;
+  margin-top: 3vh;
+  color: var(--text-color);
+}
+
+.task-buttons {
+  margin-right: 3vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.task-buttons-childs {
+  height: 6vh;
+  width: 6vh;
+  border-radius: 6vh;
+  margin: 1vh;
+  background-color: var(--button-color);
+}
+
+/*! bottom */
+.bottom {
+  width: 40vh;
+  border-radius: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button-color);
+  margin-left: 4vh;
+}
+/** date */
+.date {
+  margin: 0%;
+  padding: 0%;
+  text-align: start;
+  color: var(--text-color);
+}
+
+.calendar {
+  float: left;
+  color: var(--accent-color);
+}
+
+/** end of date */
+/*! end of bottom */
+/*! end of task */
+
+/* ? footer */
+footer {
+  margin-top: 3vh;
+  padding: 1vh;
+  border-bottom-right-radius: 3vh;
+  border-bottom-left-radius: 3vh;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer h5 {
+  font-size: 2rem;
+  margin: 0%;
+  color: var(--accent-color);
+}
+
+/*? common */
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: red;
+}
+.edit:hover {
+  background-color: darkorange;
+}
+.done:hover {
+  background-color: green;
+}
+
+#add-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.task:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ? special classes */
+
+.task.task-done {
+  background-color: var(--button-color);
+}
+
+.task-buttons-childs.task-done {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.bottom.task-done {
+  background-color: var(--background-color);
+}
+
+.task-buttons-childs.task-done:hover {
+  background-color: var(--button-hover-color);
+}
+
+/*  */
+/*  */
